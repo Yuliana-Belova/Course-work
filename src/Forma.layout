@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="398px" prefWidth="948px">
-  <widget name="tabbedPane" parent="Form" prefHeight="144px" prefWidth="912px" selectedComponent="modelGrid1" toolTipText="" type="TabsDesignInfo">
-    <constraints height="144px" left="24px" right="12px" top="24px" type="MarginConstraintsDesignInfo"/>
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="473px" prefWidth="948px">
+  <widget name="Библиотека" parent="Form" prefHeight="228px" prefWidth="912px" selectedComponent="panel1" toolTipText="" type="TabsDesignInfo">
+    <constraints bottom="209px" left="24px" right="12px" top="36px" type="MarginConstraintsDesignInfo"/>
   </widget>
-  <widget name="modelGrid" parent="tabbedPane" prefHeight="116px" prefWidth="907px" type="DbGridDesignInfo">
+  <widget name="panel1" parent="Библиотека" prefHeight="200px" prefWidth="907px" type="PanelDesignInfo">
+    <layout type="MarginLayoutDesignInfo"/>
+    <constraints tabTitle="Читатели" type="TabsConstraintsDesignInfo"/>
+  </widget>
+  <widget name="Readers" parent="panel1" prefHeight="156px" prefWidth="907px" type="DbGridDesignInfo">
     <column name="nUMBER_LIBRARY_CARD" title="Номер читательского билета" width="110">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <columnsDatasource/>
@@ -16,7 +20,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382898237583" fieldName="NUMBER_LIBRARY_CARD"/>
+      <datamodelElement entityId="138511518315670" fieldName="NUMBER_LIBRARY_CARD"/>
     </column>
     <column name="sURNAME" title="Фамилия">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -31,7 +35,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382898237583" fieldName="SURNAME"/>
+      <datamodelElement entityId="138511518315670" fieldName="SURNAME"/>
     </column>
     <column name="nAME" title="Имя">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -46,7 +50,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382898237583" fieldName="NAME"/>
+      <datamodelElement entityId="138511518315670" fieldName="NAME"/>
     </column>
     <column name="pATRONYMIC" title="Отчество">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -61,7 +65,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382898237583" fieldName="PATRONYMIC"/>
+      <datamodelElement entityId="138511518315670" fieldName="PATRONYMIC"/>
     </column>
     <column name="pASSPORT_DATA" title="Паспортные данные">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -76,7 +80,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382898237583" fieldName="PASSPORT_DATA"/>
+      <datamodelElement entityId="138511518315670" fieldName="PASSPORT_DATA"/>
     </column>
     <column name="dATE_BIRTH" title="Дата рождения">
       <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -91,7 +95,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382898237583" fieldName="DATE_BIRTH"/>
+      <datamodelElement entityId="138511518315670" fieldName="DATE_BIRTH"/>
     </column>
     <column name="aDDRESS" title="Адрес">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -106,7 +110,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382898237583" fieldName="ADDRESS"/>
+      <datamodelElement entityId="138511518315670" fieldName="ADDRESS"/>
     </column>
     <column name="tELEPHONE" title="Телефон">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -121,7 +125,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382898237583" fieldName="TELEPHONE"/>
+      <datamodelElement entityId="138511518315670" fieldName="TELEPHONE"/>
     </column>
     <column name="eDUCATION" title="Образование">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -136,15 +140,37 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382898237583" fieldName="EDUCATION"/>
+      <datamodelElement entityId="138511518315670" fieldName="EDUCATION"/>
     </column>
     <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="138382898237583" field="false"/>
+      <rowsDatasource entityId="138511518315670" field="false"/>
     </rowsColumnsDesignInfo>
     <treeDesignInfo/>
-    <constraints tabTitle="Читатели" type="TabsConstraintsDesignInfo"/>
+    <constraints bottom="44px" left="0px" right="0px" top="0px" type="MarginConstraintsDesignInfo"/>
   </widget>
-  <widget name="modelGrid1" parent="tabbedPane" prefHeight="116px" prefWidth="907px" type="DbGridDesignInfo" visible="false">
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="panel1" prefHeight="23px" prefWidth="96px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="24px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="panel1" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="156px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="panel1" prefHeight="24px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="8px" height="24px" left="288px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget name="panel2" parent="Библиотека" prefHeight="200px" prefWidth="907px" type="PanelDesignInfo" visible="false">
+    <layout type="MarginLayoutDesignInfo"/>
+    <constraints tabTitle="Литература" type="TabsConstraintsDesignInfo"/>
+  </widget>
+  <widget actionPerformed="addActionPerformed" name="add" parent="panel2" prefHeight="23px" prefWidth="96px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="24px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="saveActionPerformed" name="save" parent="panel2" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="144px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="delActionPerformed" name="del" parent="panel2" prefHeight="23px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="264px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget name="Literature" parent="panel2" prefHeight="168px" prefWidth="912px" type="DbGridDesignInfo">
     <column name="cIPHER_BOOK" title="Шифр книги">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <columnsDatasource/>
@@ -158,9 +184,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382896678163" fieldName="CIPHER_BOOK"/>
+      <datamodelElement entityId="138511516671832" fieldName="CIPHER_BOOK"/>
     </column>
-    <column name="nAME_BOOK" title="Название книги">
+    <column name="nAME_BOOK" title="Название книги ">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <columnsDatasource/>
       <columnsDisplayField/>
@@ -173,9 +199,27 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382896678163" fieldName="NAME_BOOK"/>
+      <datamodelElement entityId="138511516671832" fieldName="NAME_BOOK"/>
     </column>
-    <column name="pUBLISHING_HOUSE" title="Издательство ">
+    <column name="aUTHOR_ID" title="Автор">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138501509011500" fieldName="AUTHOR_ID"/>
+        <displayField entityId="138501509011500" fieldName="SURNAME"/>
+      </controlInfo>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="138511516671832" fieldName="AUTHOR_ID"/>
+    </column>
+    <column name="pUBLISHING_HOUSE" title="Издательство">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <columnsDatasource/>
       <columnsDisplayField/>
@@ -188,7 +232,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382896678163" fieldName="PUBLISHING_HOUSE"/>
+      <datamodelElement entityId="138511516671832" fieldName="PUBLISHING_HOUSE"/>
     </column>
     <column name="yEAR_PUBLICATION" title="Год издания">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -203,9 +247,9 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382896678163" fieldName="YEAR_PUBLICATION"/>
+      <datamodelElement entityId="138511516671832" fieldName="YEAR_PUBLICATION"/>
     </column>
-    <column name="nUMBER_COPIES" title="Число экземпляров">
+    <column name="nUMBER_COPIES" title="Число копий">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <columnsDatasource/>
       <columnsDisplayField/>
@@ -218,39 +262,24 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382896678163" fieldName="NUMBER_COPIES"/>
+      <datamodelElement entityId="138511516671832" fieldName="NUMBER_COPIES"/>
     </column>
     <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="138382896678163" field="false"/>
+      <rowsDatasource entityId="138511516671832" field="false"/>
     </rowsColumnsDesignInfo>
     <treeDesignInfo/>
-    <constraints tabTitle="Литература" type="TabsConstraintsDesignInfo"/>
+    <constraints height="168px" left="0px" top="0px" type="MarginConstraintsDesignInfo" width="912px"/>
   </widget>
-  <widget name="modelGrid2" parent="tabbedPane" prefHeight="116px" prefWidth="907px" type="DbGridDesignInfo" visible="false">
-    <column name="aUTHOR" title="Автор">
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <columnsDatasource/>
-      <columnsDisplayField/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <datamodelElement entityId="138382892781239" fieldName="AUTHOR"/>
-    </column>
-    <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="138382892781239" field="false"/>
-    </rowsColumnsDesignInfo>
-    <treeDesignInfo/>
-    <constraints tabTitle="Авторы" type="TabsConstraintsDesignInfo"/>
+  <widget name="panel3" parent="Библиотека" prefHeight="200px" prefWidth="907px" type="PanelDesignInfo" visible="false">
+    <layout type="MarginLayoutDesignInfo"/>
+    <constraints tabTitle="Выдача книг" type="TabsConstraintsDesignInfo"/>
   </widget>
-  <widget name="modelGrid3" parent="tabbedPane" prefHeight="116px" prefWidth="907px" type="DbGridDesignInfo" visible="false">
+  <widget name="Issue_Books" parent="panel3" prefHeight="156px" prefWidth="907px" type="DbGridDesignInfo">
     <column name="nUMBER_LIBRARY_CARD1" title="Номер читательского билета" width="110">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138511518315670" fieldName="NUMBER_LIBRARY_CARD"/>
+        <displayField entityId="138511518315670" fieldName="NUMBER_LIBRARY_CARD"/>
+      </controlInfo>
       <columnsDatasource/>
       <columnsDisplayField/>
       <cellsDatasource/>
@@ -262,10 +291,13 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382894743720" fieldName="NUMBER_LIBRARY_CARD"/>
+      <datamodelElement entityId="138511519843778" fieldName="READERS_ID"/>
     </column>
     <column name="cIPHER_BOOK1" title="Шифр книги">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138511516671832" fieldName="CIPHER_BOOK"/>
+        <displayField entityId="138511516671832" fieldName="CIPHER_BOOK"/>
+      </controlInfo>
       <columnsDatasource/>
       <columnsDisplayField/>
       <cellsDatasource/>
@@ -277,7 +309,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382894743720" fieldName="CIPHER_BOOK"/>
+      <datamodelElement entityId="138511519843778" fieldName="CIPHER_BOOK"/>
     </column>
     <column name="dATE_ISSUE" title="Дата выдачи ">
       <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -292,7 +324,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382894743720" fieldName="DATE_ISSUE"/>
+      <datamodelElement entityId="138511519843778" fieldName="DATE_ISSUE"/>
     </column>
     <column name="rETURN_DATE" title="Дата возврата">
       <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -307,17 +339,39 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382894743720" fieldName="RETURN_DATE"/>
+      <datamodelElement entityId="138511519843778" fieldName="RETURN_DATE"/>
     </column>
     <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="138382894743720" field="false"/>
+      <rowsDatasource entityId="138511519843778" field="false"/>
     </rowsColumnsDesignInfo>
     <treeDesignInfo/>
-    <constraints tabTitle="Выдача книг" type="TabsConstraintsDesignInfo"/>
+    <constraints bottom="44px" left="0px" right="0px" top="0px" type="MarginConstraintsDesignInfo"/>
   </widget>
-  <widget name="modelGrid4" parent="tabbedPane" prefHeight="116px" prefWidth="907px" type="DbGridDesignInfo" visible="false">
-    <column name="nUMBER_LIBRARY_CARD2" title="Номер читательского билета" width="110">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+  <widget actionPerformed="button6ActionPerformed" name="button6" parent="panel3" prefHeight="23px" prefWidth="96px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="24px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="button7ActionPerformed" name="button7" parent="panel3" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="144px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="button8ActionPerformed" name="button8" parent="panel3" prefHeight="23px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="264px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget name="panel" parent="Библиотека" prefHeight="200px" prefWidth="907px" type="PanelDesignInfo" visible="false">
+    <layout type="MarginLayoutDesignInfo"/>
+    <constraints tabTitle="Авторы" type="TabsConstraintsDesignInfo"/>
+  </widget>
+  <widget actionPerformed="button3ActionPerformed" name="button3" parent="panel" prefHeight="23px" prefWidth="84px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="24px" type="MarginConstraintsDesignInfo" width="84px"/>
+  </widget>
+  <widget actionPerformed="button4ActionPerformed" name="button4" parent="panel" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="132px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="button5ActionPerformed" name="button5" parent="panel" prefHeight="23px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="252px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget name="Author" parent="panel" prefHeight="144px" prefWidth="912px" type="DbGridDesignInfo">
+    <column name="sURNAME1" title="Фамилия">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <columnsDatasource/>
       <columnsDisplayField/>
       <cellsDatasource/>
@@ -329,10 +383,72 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382899481283" fieldName="NUMBER_LIBRARY_CARD"/>
+      <datamodelElement entityId="138511520853160" fieldName="SURNAME"/>
+    </column>
+    <column name="nAME1" title="Имя">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="138511520853160" fieldName="NAME"/>
+    </column>
+    <column name="pATRONYMIC1" title="Отчество">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="138511520853160" fieldName="PATRONYMIC"/>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138511520853160" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints bottom="56px" left="0px" right="-5px" top="0px" type="MarginConstraintsDesignInfo"/>
+  </widget>
+  <widget name="panel4" parent="Библиотека" prefHeight="200px" prefWidth="907px" type="PanelDesignInfo" visible="false">
+    <layout type="MarginLayoutDesignInfo"/>
+    <constraints tabTitle="Номер читательского зала" type="TabsConstraintsDesignInfo"/>
+  </widget>
+  <widget name="Reading_Room" parent="panel4" prefHeight="156px" prefWidth="907px" type="DbGridDesignInfo">
+    <column name="nUMBER_LIBRARY_CARD2" selectFunction="nUMBER_LIBRARY_CARD2OnSelect" title="Номер читательского билета" width="110">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138511518315670" fieldName="NUMBER_LIBRARY_CARD"/>
+        <displayField entityId="138511518315670" fieldName="NUMBER_LIBRARY_CARD"/>
+      </controlInfo>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="138511519028178" fieldName="READERS_ID"/>
     </column>
     <column name="cIPHER_BOOK2" title="Шифр книги">
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138511516671832" fieldName="CIPHER_BOOK"/>
+        <displayField entityId="138511516671832" fieldName="CIPHER_BOOK"/>
+      </controlInfo>
       <columnsDatasource/>
       <columnsDisplayField/>
       <cellsDatasource/>
@@ -344,7 +460,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382899481283" fieldName="CIPHER_BOOK"/>
+      <datamodelElement entityId="138511519028178" fieldName="CIPHER_BOOK"/>
     </column>
     <column name="nUMBER_ROOM" title="Номер зала">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -359,7 +475,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382899481283" fieldName="NUMBER_ROOM"/>
+      <datamodelElement entityId="138511519028178" fieldName="NUMBER_ROOM"/>
     </column>
     <column name="nAME_ROOM" title="Название зала">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -374,7 +490,7 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382899481283" fieldName="NAME_ROOM"/>
+      <datamodelElement entityId="138511519028178" fieldName="NAME_ROOM"/>
     </column>
     <column name="cAPACITY_ROOM" title="Вместительность">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
@@ -389,23 +505,24 @@
       <headerStyle>
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="138382899481283" fieldName="CAPACITY_ROOM"/>
+      <datamodelElement entityId="138511519028178" fieldName="CAPACITY_ROOM"/>
     </column>
     <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="138382899481283" field="false"/>
+      <rowsDatasource entityId="138511519028178" field="false"/>
     </rowsColumnsDesignInfo>
     <treeDesignInfo/>
-    <constraints tabTitle="Читательский зал" type="TabsConstraintsDesignInfo"/>
+    <constraints bottom="44px" left="0px" right="0px" top="0px" type="MarginConstraintsDesignInfo"/>
   </widget>
-  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
-    <constraints height="23px" left="24px" top="180px" type="MarginConstraintsDesignInfo" width="96px"/>
+  <widget actionPerformed="button9ActionPerformed" name="button9" parent="panel4" prefHeight="23px" prefWidth="84px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="24px" type="MarginConstraintsDesignInfo" width="84px"/>
   </widget>
-  <widget name="button1" parent="Form" prefHeight="24px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
-    <constraints height="24px" left="144px" top="180px" type="MarginConstraintsDesignInfo" width="96px"/>
+  <widget actionPerformed="button10ActionPerformed" name="button10" parent="panel4" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="132px" type="MarginConstraintsDesignInfo" width="96px"/>
   </widget>
-  <widget name="button2" parent="Form" prefHeight="23px" prefWidth="96px" text="Добавить" type="ButtonDesignInfo">
-    <constraints height="23px" left="264px" top="180px" type="MarginConstraintsDesignInfo" width="96px"/>
+  <widget actionPerformed="button11ActionPerformed" name="button11" parent="panel4" prefHeight="23px" prefWidth="84px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="9px" height="23px" left="252px" type="MarginConstraintsDesignInfo" width="84px"/>
   </widget>
   <nonvisual name="dropDownButton" prefHeight="0px" prefWidth="0px" text="dropDownButton" type="DropDownButtonDesignInfo"/>
+  <nonvisual name="desktopPane" prefHeight="0px" prefWidth="0px" type="DesktopDesignInfo"/>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>

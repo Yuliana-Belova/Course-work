@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel>
   <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-  <entity Name="READERS" Title="INFORMATION_SCHEMA.READERS" entityHeight="200" entityIconified="false" entityId="138382898237583" entityLocationX="189" entityLocationY="8" entityWidth="150" tableName="READERS" tableSchemaName="INFORMATION_SCHEMA"/>
-  <entity Name="AUTHOR" Title="INFORMATION_SCHEMA.AUTHOR" entityHeight="80" entityIconified="false" entityId="138382892781239" entityLocationX="708" entityLocationY="105" entityWidth="150" tableName="AUTHOR" tableSchemaName="INFORMATION_SCHEMA"/>
-  <entity Name="LITERATURE" Title="INFORMATION_SCHEMA.LITERATURE" entityHeight="200" entityIconified="false" entityId="138382896678163" entityLocationX="469" entityLocationY="5" entityWidth="150" tableName="LITERATURE" tableSchemaName="INFORMATION_SCHEMA"/>
-  <entity Name="READING_ROOM" Title="INFORMATION_SCHEMA.READING_ROOM" entityHeight="200" entityIconified="false" entityId="138382899481283" entityLocationX="438" entityLocationY="230" entityWidth="150" tableName="READING_ROOM" tableSchemaName="INFORMATION_SCHEMA"/>
-  <entity Name="ISSUE_BOOKS" Title="INFORMATION_SCHEMA.ISSUE_BOOKS" entityHeight="106" entityIconified="false" entityId="138382894743720" entityLocationX="190" entityLocationY="276" entityWidth="150" tableName="ISSUE_BOOKS" tableSchemaName="INFORMATION_SCHEMA"/>
-  <referenceRelation leftEntityFieldName="NUMBER_LIBRARY_CARD" leftEntityId="138382899481283" rightEntityFieldName="NUMBER_LIBRARY_CARD" rightEntityId="138382898237583"/>
-  <referenceRelation leftEntityFieldName="AUTHOR_ID" leftEntityId="138382896678163" rightEntityFieldName="AUTHOR_ID" rightEntityId="138382892781239"/>
-  <referenceRelation leftEntityFieldName="NUMBER_LIBRARY_CARD" leftEntityId="138382898237583" rightEntityFieldName="NUMBER_LIBRARY_CARD" rightEntityId="138382894743720"/>
-  <referenceRelation leftEntityFieldName="CIPHER_BOOK" leftEntityId="138382899481283" rightEntityFieldName="CIPHER_BOOK" rightEntityId="138382896678163"/>
-  <referenceRelation leftEntityFieldName="CIPHER_BOOK" leftEntityId="138382894743720" rightEntityFieldName="CIPHER_BOOK" rightEntityId="138382896678163"/>
+  <entity Name="issue_Books" Title="Issue_Books" entityHeight="200" entityIconified="false" entityId="138511519843778" entityLocationX="101" entityLocationY="321" entityWidth="150" queryId="Issue_Books" tableName="" tableSchemaName=""/>
+  <entity Name="reading_Room" Title="Reading_Room" entityHeight="200" entityIconified="false" entityId="138511519028178" entityLocationX="470" entityLocationY="338" entityWidth="150" queryId="Reading_Room" tableName="" tableSchemaName=""/>
+  <entity Name="author" Title="Author" entityHeight="200" entityIconified="false" entityId="138511520853160" entityLocationX="710" entityLocationY="95" entityWidth="150" queryId="Author" tableName="" tableSchemaName=""/>
+  <entity Name="simple" Title="simple" entityHeight="200" entityIconified="false" entityId="138511518315670" entityLocationX="224" entityLocationY="10" entityWidth="150" queryId="simple" tableName="" tableSchemaName=""/>
+  <entity Name="literature" Title="Literature" entityHeight="200" entityIconified="false" entityId="138511516671832" entityLocationX="502" entityLocationY="8" entityWidth="150" queryId="Literature" tableName="" tableSchemaName=""/>
+  <referenceRelation leftEntityFieldName="CIPHER_BOOK" leftEntityId="138511519843778" rightEntityFieldName="CIPHER_BOOK" rightEntityId="138511516671832"/>
+  <referenceRelation leftEntityFieldName="AUTHOR_ID" leftEntityId="138511516671832" rightEntityFieldName="AUTHOR_ID" rightEntityId="138511520853160"/>
+  <referenceRelation leftEntityFieldName="READERS_ID" leftEntityId="138511519843778" rightEntityFieldName="NUMBER_LIBRARY_CARD" rightEntityId="138511518315670"/>
+  <referenceRelation leftEntityFieldName="READERS_ID" leftEntityId="138511519028178" rightEntityFieldName="NUMBER_LIBRARY_CARD" rightEntityId="138511518315670"/>
+  <referenceRelation leftEntityFieldName="CIPHER_BOOK" leftEntityId="138511519028178" rightEntityFieldName="CIPHER_BOOK" rightEntityId="138511516671832"/>
 </datamodel>

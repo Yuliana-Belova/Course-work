@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><context>
-  <run/>
-  <dbSettings name="" password="123" url="jdbc:h2:tcp://localhost:9092/~/Library" user="123"/>
+  <run appElement="Forma"/>
+  <dbSettings name="" password="123" schema="PUBLIC" url="jdbc:h2:tcp://localhost:9092/~/Library_1" user="123"/>
 </context>
