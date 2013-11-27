@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="qIssueBooks" entityHeight="200" entityIconified="false" entityId="138556844834308" entityLocationX="635" entityLocationY="12" entityWidth="150" queryId="Issue_Books_1" tableAlias="q2" tableName="" tableSchemaName=""/>
+  <entity Title="qLiterature" entityHeight="200" entityIconified="false" entityId="138556841392192" entityLocationX="186" entityLocationY="9" entityWidth="150" queryId="Literature_1" tableAlias="q1" tableName="" tableSchemaName=""/>
+  <entity Title="qReaders" entityHeight="200" entityIconified="false" entityId="138556843814058" entityLocationX="399" entityLocationY="5" entityWidth="150" queryId="simple_1" tableAlias="q" tableName="" tableSchemaName=""/>
+  <relation leftEntityFieldName="READERS_ID" leftEntityId="138556843814058" rightEntityFieldName="READERSID" rightEntityId="138556844834308"/>
+  <relation leftEntityFieldName="CHIPER_ID" leftEntityId="138556841392192" rightEntityFieldName="CIPHER_BOOK" rightEntityId="138556844834308"/>
+</datamodel>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+  <entity Name="literature_1" Title="qLiterature" entityHeight="200" entityIconified="false" entityId="138537664594680" entityLocationX="554" entityLocationY="11" entityWidth="150" queryId="Literature_1" tableName="" tableSchemaName=""/>
+  <entity Name="issue_Books_1" Title="qIssueBooks" entityHeight="200" entityIconified="false" entityId="138537663910861" entityLocationX="377" entityLocationY="8" entityWidth="150" queryId="Issue_Books_1" tableName="" tableSchemaName=""/>
+  <entity Name="author_1" Title="qAuthor" entityHeight="200" entityIconified="false" entityId="138537663178799" entityLocationX="207" entityLocationY="10" entityWidth="150" queryId="Author_1" tableName="" tableSchemaName=""/>
+  <entity Name="reading_Room_1" Title="qReadingRoom" entityHeight="200" entityIconified="false" entityId="138537675859386" entityLocationX="237" entityLocationY="249" entityWidth="150" queryId="Reading_Room_1" tableName="" tableSchemaName=""/>
+  <entity Name="readers_1" Title="qReaders" entityHeight="200" entityIconified="false" entityId="138537672091909" entityLocationX="507" entityLocationY="225" entityWidth="150" queryId="simple_1" tableName="" tableSchemaName=""/>
+  <referenceRelation leftEntityFieldName="CIPHER_BOOK" leftEntityId="138537663910861" rightEntityFieldName="CHIPER_ID" rightEntityId="138537664594680"/>
+  <referenceRelation leftEntityFieldName="READERS_ID" leftEntityId="138537675859386" rightEntityFieldName="READERS_ID" rightEntityId="138537672091909"/>
+  <referenceRelation leftEntityFieldName="AUTHORID" leftEntityId="138537664594680" rightEntityFieldName="AUTHOR_ID" rightEntityId="138537663178799"/>
+  <referenceRelation leftEntityFieldName="CIPHERBOOK" leftEntityId="138537675859386" rightEntityFieldName="CHIPER_ID" rightEntityId="138537664594680"/>
+  <referenceRelation leftEntityFieldName="READERSID" leftEntityId="138537663910861" rightEntityFieldName="READERS_ID" rightEntityId="138537672091909"/>
+</datamodel>

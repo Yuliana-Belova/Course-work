@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><datamodel>
-  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
-  <entity Title="LITERATURE" entityHeight="200" entityIconified="false" entityId="138501466532571" entityLocationX="229" entityLocationY="14" entityWidth="150" tableAlias="t1" tableName="LITERATURE" tableSchemaName=""/>
-</datamodel>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><datamodel datamodelDbId="null">
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="138449030450702" entityLocationX="507" entityLocationY="411" entityWidth="258" tableName="READING_ROOM"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="138449030394776" entityLocationX="762" entityLocationY="136" entityWidth="234" tableName="AUTHOR"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="138449030442928" entityLocationX="62" entityLocationY="11" entityWidth="266" tableName="READERS"/>
-  <fieldsEntity entityHeight="203" entityIconified="false" entityId="138449030435580" entityLocationX="438" entityLocationY="4" entityWidth="187" tableName="LITERATURE"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="138449030423641" entityLocationX="11" entityLocationY="301" entityWidth="251" tableName="ISSUE_BOOKS"/>
-</datamodel>

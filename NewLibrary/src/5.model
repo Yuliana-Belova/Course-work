@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="qReaders" entityHeight="200" entityIconified="false" entityId="138556479118797" entityLocationX="314" entityLocationY="11" entityWidth="150" queryId="simple_1" tableAlias="q1" tableName="" tableSchemaName=""/>
+</datamodel>
