@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parameters>
+    <parameter description="" name="Chiper_ID" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="3" typeName="DECIMAL"/>
+  </parameters>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+  <entity Name="_" Title="Chiper" entityHeight="200" entityIconified="false" entityId="138599183686549" entityLocationX="227" entityLocationY="15" entityWidth="150" queryId="_" tableName="" tableSchemaName=""/>
+  <relation leftEntityId="-1" leftEntityParameterName="Chiper_ID" rightEntityId="138599183686549" rightEntityParameterName="Chiper_ID"/>
+</datamodel>

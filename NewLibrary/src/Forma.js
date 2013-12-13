@@ -19,7 +19,7 @@ function button2ActionPerformed(evt) {//GEN-FIRST:event_button2ActionPerformed
 
 function button1ActionPerformed(evt) {//GEN-FIRST:event_button1ActionPerformed
     // TODO Добавьте свой код:
-    //WARNING - Проверку удаления!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+
     readers_1.deleteRow();
 
 }//GEN-LAST:event_button1ActionPerformed
@@ -92,3 +92,39 @@ function nUMBER_LIBRARY_CARD2OnSelect(aEditor) {//GEN-FIRST:event_nUMBER_LIBRARY
 //                aEditor.value = aValue;
 //            });
 }//GEN-LAST:event_nUMBER_LIBRARY_CARD2OnSelect
+
+function button12ActionPerformed(evt) {//GEN-FIRST:event_button12ActionPerformed
+	// TODO Добавьте свой код:
+        var wnd = new ghthgt();
+        wnd.showModal();
+}//GEN-LAST:event_button12ActionPerformed
+
+function nUMBER_LIBRARY_CARD1OnSelect(aEditor) {//GEN-FIRST:event_nUMBER_LIBRARY_CARD1OnSelect
+	// TODO Добавьте свой код:
+         var wnd = new Ne_Bolshe1();
+        wnd.showModal();
+}//GEN-LAST:event_nUMBER_LIBRARY_CARD1OnSelect
+
+function button13ActionPerformed(evt) {//GEN-FIRST:event_button13ActionPerformed
+	// TODO Добавьте свой код:
+        var wnd = new LookNameBook();
+        wnd.showModal();
+}//GEN-LAST:event_button13ActionPerformed
+
+function button131ActionPerformed(evt) {//GEN-FIRST:event_button131ActionPerformed
+	// TODO Добавьте свой код:
+        var wnd = new LookChiper();
+        wnd.showModal();
+}//GEN-LAST:event_button131ActionPerformed
+
+function button14ActionPerformed(evt) {//GEN-FIRST:event_button14ActionPerformed
+	// TODO Добавьте свой код:
+        var wnd = new SurnameNameBook();
+        wnd.showModal();
+}//GEN-LAST:event_button14ActionPerformed
+
+function button15ActionPerformed(evt) {//GEN-FIRST:event_button15ActionPerformed
+	// TODO Добавьте свой код:
+         var wnd = new SurnameDateIssue();
+        wnd.showModal();
+}//GEN-LAST:event_button15ActionPerformed

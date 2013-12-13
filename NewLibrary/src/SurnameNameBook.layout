@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="346px" prefWidth="780px" windowOpened="formWindowOpened">
+  <widget name="modelGrid" parent="Form" prefHeight="228px" prefWidth="732px" type="DbGridDesignInfo">
+    <column name="sURNAME" title="Фамилия">
+      <datamodelElement entityId="138599367166241" fieldName="SURNAME"/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+    </column>
+    <column name="nAME" title="Имя">
+      <datamodelElement entityId="138599367166241" fieldName="NAME"/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+    </column>
+    <column name="pATRONYMIC" title="Отчество">
+      <datamodelElement entityId="138599367166241" fieldName="PATRONYMIC"/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+    </column>
+    <column name="nAMEBOOK" title="Название книги">
+      <datamodelElement entityId="138599367166241" fieldName="NAMEBOOK"/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138599367166241" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="228px" left="24px" top="72px" type="MarginConstraintsDesignInfo" width="732px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="77px" text="Поиск" type="ButtonDesignInfo">
+    <constraints height="23px" right="43px" top="24px" type="MarginConstraintsDesignInfo" width="77px"/>
+  </widget>
+  <widget name="modelFormattedField" parent="Form" prefHeight="20px" prefWidth="228px" type="DbLabelDesignInfo">
+    <datamodelElement entityId="-1" fieldName="Surname"/>
+    <constraints height="20px" left="408px" top="24px" type="MarginConstraintsDesignInfo" width="228px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

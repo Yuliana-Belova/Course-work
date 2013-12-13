@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parameters>
+    <parameter description="" name="SURMANE" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+  </parameters>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="ISSUEBOOKS" entityHeight="200" entityIconified="false" entityId="138596548085185" entityLocationX="542" entityLocationY="29" entityWidth="150" tableAlias="t" tableName="ISSUEBOOKS" tableSchemaName=""/>
+  <entity Title="READERS" entityHeight="200" entityIconified="false" entityId="138596548088247" entityLocationX="291" entityLocationY="8" entityWidth="150" tableAlias="t2" tableName="READERS" tableSchemaName=""/>
+  <entity Title="LITERATURE" entityHeight="200" entityIconified="false" entityId="138596548086657" entityLocationX="851" entityLocationY="32" entityWidth="150" tableAlias="t1" tableName="LITERATURE" tableSchemaName=""/>
+  <relation leftEntityFieldName="READERS_ID" leftEntityId="138596548088247" rightEntityFieldName="READERSID" rightEntityId="138596548085185"/>
+  <relation leftEntityFieldName="CIPHER_BOOK" leftEntityId="138596548085185" rightEntityFieldName="CHIPER_ID" rightEntityId="138596548086657"/>
+  <relation leftEntityId="-1" leftEntityParameterName="SURMANE" rightEntityFieldName="SURNAME" rightEntityId="138596548088247"/>
+</datamodel>

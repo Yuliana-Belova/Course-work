@@ -5,9 +5,9 @@
   <entity Name="author_1" Title="qAuthor" entityHeight="200" entityIconified="false" entityId="138537663178799" entityLocationX="207" entityLocationY="10" entityWidth="150" queryId="Author_1" tableName="" tableSchemaName=""/>
   <entity Name="reading_Room_1" Title="qReadingRoom" entityHeight="200" entityIconified="false" entityId="138537675859386" entityLocationX="237" entityLocationY="249" entityWidth="150" queryId="Reading_Room_1" tableName="" tableSchemaName=""/>
   <entity Name="readers_1" Title="qReaders" entityHeight="200" entityIconified="false" entityId="138537672091909" entityLocationX="507" entityLocationY="225" entityWidth="150" queryId="simple_1" tableName="" tableSchemaName=""/>
-  <referenceRelation leftEntityFieldName="CIPHER_BOOK" leftEntityId="138537663910861" rightEntityFieldName="CHIPER_ID" rightEntityId="138537664594680"/>
-  <referenceRelation leftEntityFieldName="READERS_ID" leftEntityId="138537675859386" rightEntityFieldName="READERS_ID" rightEntityId="138537672091909"/>
-  <referenceRelation leftEntityFieldName="AUTHORID" leftEntityId="138537664594680" rightEntityFieldName="AUTHOR_ID" rightEntityId="138537663178799"/>
   <referenceRelation leftEntityFieldName="CIPHERBOOK" leftEntityId="138537675859386" rightEntityFieldName="CHIPER_ID" rightEntityId="138537664594680"/>
+  <referenceRelation leftEntityFieldName="READERS_ID" leftEntityId="138537675859386" rightEntityFieldName="READERS_ID" rightEntityId="138537672091909"/>
   <referenceRelation leftEntityFieldName="READERSID" leftEntityId="138537663910861" rightEntityFieldName="READERS_ID" rightEntityId="138537672091909"/>
+  <referenceRelation leftEntityFieldName="CIPHER_BOOK" leftEntityId="138537663910861" rightEntityFieldName="CHIPER_ID" rightEntityId="138537664594680"/>
+  <referenceRelation leftEntityFieldName="AUTHORID" leftEntityId="138537664594680" rightEntityFieldName="AUTHOR_ID" rightEntityId="138537663178799"/>
 </datamodel>

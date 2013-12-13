@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="306px" prefWidth="822px" windowOpened="formWindowOpened">
+  <widget name="modelGrid" parent="Form" prefHeight="204px" prefWidth="768px" type="DbGridDesignInfo">
+    <column name="cHIPER_ID" title="Шифр книги">
+      <datamodelElement entityId="138599183686549" fieldName="CHIPER_ID"/>
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+    </column>
+    <column name="nAMEBOOK" title="Название книги">
+      <datamodelElement entityId="138599183686549" fieldName="NAMEBOOK"/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138599183686549" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="204px" left="24px" top="72px" type="MarginConstraintsDesignInfo" width="768px"/>
+  </widget>
+  <widget name="modelFormattedField" parent="Form" prefHeight="20px" prefWidth="264px" type="DbLabelDesignInfo">
+    <datamodelElement entityId="-1" fieldName="Chiper_ID"/>
+    <constraints height="20px" left="384px" top="24px" type="MarginConstraintsDesignInfo" width="264px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="84px" text="Поиск" type="ButtonDesignInfo">
+    <constraints height="23px" right="42px" top="24px" type="MarginConstraintsDesignInfo" width="84px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

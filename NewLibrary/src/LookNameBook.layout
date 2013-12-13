@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="387px" prefWidth="818px" windowOpened="formWindowOpened">
+  <widget name="modelGrid" parent="Form" prefHeight="180px" prefWidth="756px" type="DbGridDesignInfo">
+    <column name="nAMEBOOK" title="Название книги">
+      <datamodelElement entityId="138599040569404" fieldName="NAMEBOOK"/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+    </column>
+    <column name="cHIPER_ID" title="Шифр книги">
+      <datamodelElement entityId="138599040569404" fieldName="CHIPER_ID"/>
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138599040569404" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="180px" left="24px" top="96px" type="MarginConstraintsDesignInfo" width="756px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="84px" text="Поиск" type="ButtonDesignInfo">
+    <constraints height="23px" right="50px" top="24px" type="MarginConstraintsDesignInfo" width="84px"/>
+  </widget>
+  <widget name="modelFormattedField" parent="Form" prefHeight="20px" prefWidth="216px" type="DbLabelDesignInfo">
+    <datamodelElement entityId="-1" fieldName="Param1"/>
+    <constraints height="20px" left="444px" top="24px" type="MarginConstraintsDesignInfo" width="216px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

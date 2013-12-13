@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="300px" prefWidth="400px">
+  <widget name="modelGrid" parent="Form" prefHeight="144px" prefWidth="360px" type="DbGridDesignInfo">
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138598617400687" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <column name="sURNAME" title="Фамилия">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138598617400687" fieldName="SURNAME"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="nAME" title="Имя">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138598617400687" fieldName="NAME"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="pATRONYMIC" title="Отчество">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138598617400687" fieldName="PATRONYMIC"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="nUBERCOPIES" title="Число копий">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="138598617400687" fieldName="NUBERCOPIES"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <constraints height="144px" left="24px" top="48px" type="MarginConstraintsDesignInfo" width="360px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>
